@@ -1,23 +1,424 @@
-<html>
+<!DOCTYPE html>
+<html lang="fr">
 <head>
-	<meta charset="utf-8"/>
-	<link href="../style.css" rel="stylesheet" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cahier des Charges - NATVIT</title>
+    <link href="../style.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Slab:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<header style="box-shadow: 1px 1px 5px black;">
-	<table>
-		<ul>
-			<li><a href="../index.html" >Accueil</a></li>
-			<li><a href="#" >Cahier des charges</a></li>
-			<li><a href="../2-securite/securite.html">Sécurité</a></li>
-			<li><a href="../3-po/po.html">P.O</a></li>
-			<li><a href="../4-pc/pc.html">P.C</a></li>
-			<li><a href="../5-test/test.html" class="current">Test</a></li>
-			<li><a href="../6-devis/devis.html">Devis</a></li>
-			<li><a href="../7-doctech/doctech.html">Doc technique</a></li>
-		</ul>
-	</table>
-</header>
-<embed src="cdc.pdf" type="application/pdf" width="100%" height="100%">
+    <!-- Navigation Header -->
+    <header class="header-secondary">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="../logo.png" alt="NATVIT Logo" class="logo-img">
+                    <span class="logo-text">NATVIT</span>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+                
+                <!-- Navigation Menu -->
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Cahier des charges</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../2-securite/securite.html" class="nav-link">Sécurité</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../3-po/po.html" class="nav-link">P.O</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../4-pc/pc.html" class="nav-link">P.C</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../5-test/test.html" class="nav-link">Test</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../6-devis/devis.html" class="nav-link">Devis</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../7-doctech/doctech.html" class="nav-link">Doc technique</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+        <!-- Page Header -->
+        <section class="page-hero">
+            <div class="container">
+                <div class="breadcrumb">
+                    <a href="../index.html" class="breadcrumb-link">Accueil</a>
+                    <span class="breadcrumb-separator">›</span>
+                    <span class="breadcrumb-current">Cahier des Charges</span>
+                </div>
+                <h1 class="page-title">Cahier des Charges</h1>
+                <p class="page-subtitle">Spécifications techniques et exigences du projet de dépalletisation</p>
+            </div>
+        </section>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Project Overview Section -->
+        <section class="section">
+            <div class="container">
+                <div class="content-section">
+                    <div class="section-header">
+                        <h2 class="section-title">Contexte du Projet</h2>
+                        <p class="section-description">
+                            Automatisation du processus de dépalletisation pour optimiser la chaîne de production
+                        </p>
+                    </div>
+                    
+                    <div class="context-grid">
+                        <div class="context-card">
+                            <div class="context-icon">🏭</div>
+                            <h3 class="context-title">Contexte Industriel</h3>
+                            <p class="context-description">
+                                NATVIT souhaite automatiser le processus de dépalletisation des bouteilles de jus Natura 
+                                pour améliorer l'efficacité de production et réduire la pénibilité du travail.
+                            </p>
+                            <div class="context-details">
+                                <div class="detail-item">
+                                    <span class="detail-label">Secteur :</span>
+                                    <span class="detail-value">Agroalimentaire</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Produit :</span>
+                                    <span class="detail-value">Jus de fruits Natura</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="context-card">
+                            <div class="context-icon">🎯</div>
+                            <h3 class="context-title">Objectifs</h3>
+                            <p class="context-description">
+                                Conception et réalisation d'un système automatisé de dépalletisation 
+                                pour optimiser la productivité et garantir la sécurité.
+                            </p>
+                            <div class="context-details">
+                                <div class="detail-item">
+                                    <span class="detail-label">Productivité :</span>
+                                    <span class="detail-value">+30% de rendement</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Sécurité :</span>
+                                    <span class="detail-value">Réduction des TMS</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Specifications Section -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="content-section">
+                    <div class="section-header">
+                        <h2 class="section-title">Spécifications Techniques</h2>
+                        <p class="section-description">
+                            Exigences techniques détaillées pour le système de dépalletisation
+                        </p>
+                    </div>
+                    
+                    <div class="specs-grid">
+                        <div class="spec-category">
+                            <h3 class="category-title">Performance</h3>
+                            <div class="spec-list">
+                                <div class="spec-item">
+                                    <span class="spec-label">Cadence :</span>
+                                    <span class="spec-value">120 bouteilles/heure</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Disponibilité :</span>
+                                    <span class="spec-value">≥ 95%</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Précision :</span>
+                                    <span class="spec-value">± 2 mm</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Temps de cycle :</span>
+                                    <span class="spec-value">30 secondes</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="spec-category">
+                            <h3 class="category-title">Dimensions</h3>
+                            <div class="spec-list">
+                                <div class="spec-item">
+                                    <span class="spec-label">Emprise au sol :</span>
+                                    <span class="spec-value">3 x 2 m</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Hauteur :</span>
+                                    <span class="spec-value">2,5 m max</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Portée bras :</span>
+                                    <span class="spec-value">1,5 m</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Levage :</span>
+                                    <span class="spec-value">1,8 m</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="spec-category">
+                            <h3 class="category-title">Énergie</h3>
+                            <div class="spec-list">
+                                <div class="spec-item">
+                                    <span class="spec-label">Alimentation :</span>
+                                    <span class="spec-value">400V 3pH 50Hz</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Puissance :</span>
+                                    <span class="spec-value">5 kW max</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Air comprimé :</span>
+                                    <span class="spec-value">6 bar, 800 l/min</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Consommation :</span>
+                                    <span class="spec-value">3 kW moyen</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="spec-category">
+                            <h3 class="category-title">Environnement</h3>
+                            <div class="spec-list">
+                                <div class="spec-item">
+                                    <span class="spec-label">Température :</span>
+                                    <span class="spec-value">5°C à 40°C</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Humidité :</span>
+                                    <span class="spec-value">45% à 85%</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Niveau sonore :</span>
+                                    <span class="spec-value">< 70 dB(A)</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Indice IP :</span>
+                                    <span class="spec-value">IP54</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Functional Requirements Section -->
+        <section class="section">
+            <div class="container">
+                <div class="content-section">
+                    <div class="section-header">
+                        <h2 class="section-title">Exigences Fonctionnelles</h2>
+                        <p class="section-description">
+                            Fonctionnalités requises pour le système de dépalletisation
+                        </p>
+                    </div>
+                    
+                    <div class="requirements-grid">
+                        <div class="requirement-card">
+                            <div class="requirement-header">
+                                <span class="requirement-id">REQ-001</span>
+                                <span class="requirement-priority high">Critique</span>
+                            </div>
+                            <h3 class="requirement-title">Préhension Automatique</h3>
+                            <p class="requirement-description">
+                                Le système doit pouvoir saisir automatiquement les bouteilles depuis la palette 
+                                sans intervention humaine.
+                            </p>
+                            <div class="requirement-details">
+                                <div class="detail-item">
+                                    <span class="detail-label">Force de préhension :</span>
+                                    <span class="detail-value">Ajustable 50-150 N</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Détection :</span>
+                                    <span class="detail-value">Capteur de présence</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="requirement-card">
+                            <div class="requirement-header">
+                                <span class="requirement-id">REQ-002</span>
+                                <span class="requirement-priority high">Critique</span>
+                            </div>
+                            <h3 class="requirement-title">Contrôle de Position</h3>
+                            <p class="requirement-description">
+                                Le bras manipulateur doit pouvoir se positionner précisément pour 
+                                saisir les bouteilles aux différents niveaux de la palette.
+                            </p>
+                            <div class="requirement-details">
+                                <div class="detail-item">
+                                    <span class="detail-label">Précision :</span>
+                                    <span class="detail-value">± 2 mm</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Répétabilité :</span>
+                                    <span class="detail-value">± 0,5 mm</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="requirement-card">
+                            <div class="requirement-header">
+                                <span class="requirement-id">REQ-003</span>
+                                <span class="requirement-priority medium">Important</span>
+                            </div>
+                            <h3 class="requirement-title">Interface Utilisateur</h3>
+                            <p class="requirement-description">
+                                Interface simple et intuitive pour le contrôle et la supervision 
+                                du système de dépalletisation.
+                            </p>
+                            <div class="requirement-details">
+                                <div class="detail-item">
+                                    <span class="detail-label">Écran :</span>
+                                    <span class="detail-value">Tactile 7 pouces</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Modes :</span>
+                                    <span class="detail-value">Auto/Manuel/Maintenance</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="requirement-card">
+                            <div class="requirement-header">
+                                <span class="requirement-id">REQ-004</span>
+                                <span class="requirement-priority low">Souhaitable</span>
+                            </div>
+                            <h3 class="requirement-title">Traçabilité</h3>
+                            <p class="requirement-description">
+                                Enregistrement des données de production et des événements 
+                                pour le suivi et l'analyse des performances.
+                            </p>
+                            <div class="requirement-details">
+                                <div class="detail-item">
+                                    <span class="detail-label">Historique :</span>
+                                    <span class="detail-value">30 jours</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Export :</span>
+                                    <span class="detail-value">CSV/Excel</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Document Section -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="content-section">
+                    <div class="section-header">
+                        <h2 class="section-title">Document Officiel</h2>
+                        <p class="section-description">
+                            Cahier des charges complet au format PDF
+                        </p>
+                    </div>
+                    
+                    <div class="document-container">
+                        <div class="document-card">
+                            <div class="document-header">
+                                <div class="document-icon">📋</div>
+                                <div class="document-info">
+                                    <h3 class="document-title">Cahier des Charges - Dépalletisation NATVIT</h3>
+                                    <div class="document-meta">
+                                        <span class="document-type">Spécifications Techniques</span>
+                                        <span class="document-format">PDF</span>
+                                        <span class="document-version">v1.0</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="document-content">
+                                <div class="document-preview">
+                                    <embed src="cdc.pdf" class="document-embed" type="application/pdf" title="Cahier des Charges"/>
+                                </div>
+                            </div>
+                            <div class="document-actions">
+                                <a href="cdc.pdf" target="_blank" class="doc-button primary">
+                                    <span class="button-icon">📥</span>
+                                    Télécharger PDF
+                                </a>
+                                <button class="doc-button secondary" onclick="window.print()">
+                                    <span class="button-icon">🖨️</span>
+                                    Imprimer
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 class="footer-title">NATVIT</h4>
+                    <p class="footer-text">Solutions d'automatisation industrielle</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Contact</h4>
+                    <p class="footer-text">13 Route de la Fontaine<br>05110 CLARET</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Projet</h4>
+                    <p class="footer-text">Dépalletisation de bouteilles<br>Automatisation industrielle</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 NATVIT - Tous droits réservés</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navMenu = document.getElementById('navMenu');
+
+        mobileMenuBtn.addEventListener('click', function() {
+            navMenu.classList.toggle('active');
+            mobileMenuBtn.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function() {
+                navMenu.classList.remove('active');
+                mobileMenuBtn.classList.remove('active');
+            });
+        });
+    </script>
 </body>
 </html>

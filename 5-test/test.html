@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tests - NATVIT</title>
+    <link href="../style.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Slab:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="header-secondary">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="../logo.png" alt="NATVIT Logo" class="logo-img">
+                    <span class="logo-text">NATVIT</span>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+                
+                <!-- Navigation Menu -->
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../1-cdc/cdc.html" class="nav-link">Cahier des charges</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../2-securite/securite.html" class="nav-link">Sécurité</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../3-po/po.html" class="nav-link">P.O</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../4-pc/pc.html" class="nav-link">P.C</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Test</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../6-devis/devis.html" class="nav-link">Devis</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../7-doctech/doctech.html" class="nav-link">Doc technique</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+        <!-- Page Header -->
+        <section class="page-hero">
+            <div class="container">
+                <div class="breadcrumb">
+                    <a href="../index.html" class="breadcrumb-link">Accueil</a>
+                    <span class="breadcrumb-separator">›</span>
+                    <span class="breadcrumb-current">Tests</span>
+                </div>
+                <h1 class="page-title">Tests et Validation</h1>
+                <p class="page-subtitle">Validation des performances et du bon fonctionnement du système</p>
+            </div>
+        </section>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Test Overview Section -->
+        <section class="section">
+            <div class="container">
+                <div class="content-section">
+                    <div class="section-header">
+                        <h2 class="section-title">Plan de Tests</h2>
+                        <p class="section-description">
+                            Stratégie de validation complète du système de dépalletisation
+                        </p>
+                    </div>
+                    
+                    <div class="test-phases">
+                        <div class="phase-card">
+                            <div class="phase-number">1</div>
+                            <div class="phase-content">
+                                <h3 class="phase-title">Tests Unitaires</h3>
+                                <p class="phase-description">Validation individuelle de chaque composant du système</p>
+                                <div class="phase-items">
+                                    <span class="phase-item">Vérins pneumatiques</span>
+                                    <span class="phase-item">Capteurs de position</span>
+                                    <span class="phase-item">Système de préhension</span>
+                                    <span class="phase-item">Interface utilisateur</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="phase-card">
+                            <div class="phase-number">2</div>
+                            <div class="phase-content">
+                                <h3 class="phase-title">Tests d'Intégration</h3>
+                                <p class="phase-description">Validation du fonctionnement coordonné des sous-systèmes</p>
+                                <div class="phase-items">
+                                    <span class="phase-item">Séquencement des mouvements</span>
+                                    <span class="phase-item">Communication P.O/P.C</span>
+                                    <span class="phase-item">Gestion des alarmes</span>
+                                    <span class="phase-item">Modes de fonctionnement</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="phase-card">
+                            <div class="phase-number">3</div>
+                            <div class="phase-content">
+                                <h3 class="phase-title">Tests de Performance</h3>
+                                <p class="phase-description">Validation des spécifications de performance et de cadence</p>
+                                <div class="phase-items">
+                                    <span class="phase-item">Temps de cycle</span>
+                                    <span class="phase-item">Précision de positionnement</span>
+                                    <span class="phase-item">Cadence de production</span>
+                                    <span class="phase-item">Répétabilité</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="phase-card">
+                            <div class="phase-number">4</div>
+                            <div class="phase-content">
+                                <h3 class="phase-title">Tests de Sécurité</h3>
+                                <p class="phase-description">Validation des dispositifs de sécurité et des procédures d'urgence</p>
+                                <div class="phase-items">
+                                    <span class="phase-item">Arrêts d'urgence</span>
+                                    <span class="phase-item">Barrières de sécurité</span>
+                                    <span class="phase-item">Capteurs de sécurité</span>
+                                    <span class="phase-item">Procédures de consignation</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Test Results Section -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="content-section">
+                    <div class="section-header">
+                        <h2 class="section-title">Résultats des Tests</h2>
+                        <p class="section-description">
+                            Synthèse des résultats obtenus lors des campagnes de tests
+                        </p>
+                    </div>
+                    
+                    <div class="results-grid">
+                        <div class="result-card success">
+                            <div class="result-icon">✅</div>
+                            <div class="result-content">
+                                <h3 class="result-title">Tests Fonctionnels</h3>
+                                <div class="result-score">98%</div>
+                                <p class="result-description">Tous les tests fonctionnels sont passés avec succès</p>
+                                <div class="result-details">
+                                    <div class="detail-row">
+                                        <span class="detail-label">Préhension :</span>
+                                        <span class="detail-value status-pass">PASS</span>
+                                    </div>
+                                    <div class="detail-row">
+                                        <span class="detail-label">Positionnement :</span>
+                                        <span class="detail-value status-pass">PASS</span>
+                                    </div>
+                                    <div class="detail-row">
+                                        <span class="detail-label">Séquencement :</span>
+                                        <span class="detail-value status-pass">PASS</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="result-card success">
+                            <div class="result-icon">🚀</div>
+                            <div class="result-content">
+                                <h3 class="result-title">Tests de Performance</h3>
+                                <div class="result-score">95%</div>
+                                <p class="result-description">Les performances dépassent les objectifs fixés</p>
+                                <div class="result-details">
+                                    <div class="detail-row">
+                                        <span class="detail-label">Cadence :</span>
+                                        <span class="detail-value">125 bouteilles/h</span>
+                                    </div>
+                                    <div class="detail-row">
+                                        <span class="detail-label">Précision :</span>
+                                        <span class="detail-value">± 1,5 mm</span>
+                                    </div>
+                                    <div class="detail-row">
+                                        <span class="detail-label">Temps de cycle :</span>
+                                        <span class="detail-value">28,8 secondes</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="result-card success">
+                            <div class="result-icon">🛡️</div>
+                            <div class="result-content">
+                                <h3 class="result-title">Tests de Sécurité</h3>
+                                <div class="result-score">100%</div>
+                                <p class="result-description">Tous les dispositifs de sécurité sont opérationnels</p>
+                                <div class="result-details">
+                                    <div class="detail-row">
+                                        <span class="detail-label">Arrêts d'urgence :</span>
+                                        <span class="detail-value status-pass">PASS</span>
+                                    </div>
+                                    <div class="detail-row">
+                                        <span class="detail-label">Barrières :</span>
+                                        <span class="detail-value status-pass">PASS</span>
+                                    </div>
+                                    <div class="detail-row">
+                                        <span class="detail-label">Capteurs :</span>
+                                        <span class="detail-value status-pass">PASS</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="result-card warning">
+                            <div class="result-icon">⚠️</div>
+                            <div class="result-content">
+                                <h3 class="result-title">Tests d'Endurance</h3>
+                                <div class="result-score">85%</div>
+                                <p class="result-description">Tests en cours, premiers résultats encourageants</p>
+                                <div class="result-details">
+                                    <div class="detail-row">
+                                        <span class="detail-label">Durée testée :</span>
+                                        <span class="detail-value">72 heures</span>
+                                    </div>
+                                    <div class="detail-row">
+                                        <span class="detail-label">Cycles réalisés :</span>
+                                        <span class="detail-value">8 640 cycles</span>
+                                    </div>
+                                    <div class="detail-row">
+                                        <span class="detail-label">Pannes :</span>
+                                        <span class="detail-value">2 mineures</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Test Protocols Section -->
+        <section class="section">
+            <div class="container">
+                <div class="content-section">
+                    <div class="section-header">
+                        <h2 class="section-title">Protocoles de Test</h2>
+                        <p class="section-description">
+                            Procédures détaillées pour chaque type de test
+                        </p>
+                    </div>
+                    
+                    <div class="protocols-grid">
+                        <div class="protocol-card">
+                            <div class="protocol-header">
+                                <h3 class="protocol-title">Test de Préhension</h3>
+                                <span class="protocol-duration">30 min</span>
+                            </div>
+                            <div class="protocol-content">
+                                <div class="protocol-steps">
+                                    <div class="step-item">
+                                        <span class="step-number">1</span>
+                                        <span class="step-text">Positionnement du bras au-dessus de la bouteille</span>
+                                    </div>
+                                    <div class="step-item">
+                                        <span class="step-number">2</span>
+                                        <span class="step-text">Descente et approche de la pince</span>
+                                    </div>
+                                    <div class="step-item">
+                                        <span class="step-number">3</span>
+                                        <span class="step-text">Fermeture et contrôle de la force</span>
+                                    </div>
+                                    <div class="step-item">
+                                        <span class="step-number">4</span>
+                                        <span class="step-text">Levage et vérification de la prise</span>
+                                    </div>
+                                </div>
+                                <div class="protocol-criteria">
+                                    <div class="criteria-item">
+                                        <span class="criteria-label">Force de préhension :</span>
+                                        <span class="criteria-value">80-120 N</span>
+                                    </div>
+                                    <div class="criteria-item">
+                                        <span class="criteria-label">Temps de prise :</span>
+                                        <span class="criteria-value">< 3 secondes</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="protocol-card">
+                            <div class="protocol-header">
+                                <h3 class="protocol-title">Test de Positionnement</h3>
+                                <span class="protocol-duration">45 min</span>
+                            </div>
+                            <div class="protocol-content">
+                                <div class="protocol-steps">
+                                    <div class="step-item">
+                                        <span class="step-number">1</span>
+                                        <span class="step-text">Calibrage des capteurs de position</span>
+                                    </div>
+                                    <div class="step-item">
+                                        <span class="step-number">2</span>
+                                        <span class="step-text">Déplacement vers positions de référence</span>
+                                    </div>
+                                    <div class="step-item">
+                                        <span class="step-number">3</span>
+                                        <span class="step-text">Mesure de la précision de positionnement</span>
+                                    </div>
+                                    <div class="step-item">
+                                        <span class="step-number">4</span>
+                                        <span class="step-text">Test de répétabilité (20 cycles)</span>
+                                    </div>
+                                </div>
+                                <div class="protocol-criteria">
+                                    <div class="criteria-item">
+                                        <span class="criteria-label">Précision :</span>
+                                        <span class="criteria-value">± 2 mm</span>
+                                    </div>
+                                    <div class="criteria-item">
+                                        <span class="criteria-label">Répétabilité :</span>
+                                        <span class="criteria-value">± 0,5 mm</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="protocol-card">
+                            <div class="protocol-header">
+                                <h3 class="protocol-title">Test de Sécurité</h3>
+                                <span class="protocol-duration">60 min</span>
+                            </div>
+                            <div class="protocol-content">
+                                <div class="protocol-steps">
+                                    <div class="step-item">
+                                        <span class="step-number">1</span>
+                                        <span class="step-text">Test des arrêts d'urgence</span>
+                                    </div>
+                                    <div class="step-item">
+                                        <span class="step-number">2</span>
+                                        <span class="step-text">Vérification des barrières de sécurité</span>
+                                    </div>
+                                    <div class="step-item">
+                                        <span class="step-number">3</span>
+                                        <span class="step-text">Test des capteurs de présence</span>
+                                    </div>
+                                    <div class="step-item">
+                                        <span class="step-number">4</span>
+                                        <span class="step-text">Simulation d'intrusion</span>
+                                    </div>
+                                </div>
+                                <div class="protocol-criteria">
+                                    <div class="criteria-item">
+                                        <span class="criteria-label">Temps d'arrêt :</span>
+                                        <span class="criteria-value">< 0,5 seconde</span>
+                                    </div>
+                                    <div class="criteria-item">
+                                        <span class="criteria-label">Distance d'arrêt :</span>
+                                        <span class="criteria-value">< 10 mm</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Validation Report Section -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="content-section">
+                    <div class="section-header">
+                        <h2 class="section-title">Rapport de Validation</h2>
+                        <p class="section-description">
+                            Conclusion des tests et recommandations
+                        </p>
+                    </div>
+                    
+                    <div class="validation-summary">
+                        <div class="summary-card">
+                            <div class="summary-header">
+                                <h3 class="summary-title">Synthèse Générale</h3>
+                                <div class="summary-status success">VALIDÉ</div>
+                            </div>
+                            <div class="summary-content">
+                                <p class="summary-text">
+                                    Le système de dépalletisation automatisé NATVIT répond à l'ensemble des exigences 
+                                    du cahier des charges. Les performances obtenues dépassent les objectifs fixés 
+                                    en termes de cadence et de précision.
+                                </p>
+                                <div class="summary-stats">
+                                    <div class="stat-item">
+                                        <span class="stat-value">97%</span>
+                                        <span class="stat-label">Taux de réussite global</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-value">125</span>
+                                        <span class="stat-label">Bouteilles/heure</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-value">±1,5mm</span>
+                                        <span class="stat-label">Précision mesurée</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-value">100%</span>
+                                        <span class="stat-label">Conformité sécurité</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="recommendations-card">
+                            <h3 class="recommendations-title">Recommandations</h3>
+                            <div class="recommendations-list">
+                                <div class="recommendation-item">
+                                    <span class="recommendation-icon">🔧</span>
+                                    <span class="recommendation-text">Maintenance préventive tous les 1000 cycles</span>
+                                </div>
+                                <div class="recommendation-item">
+                                    <span class="recommendation-icon">📊</span>
+                                    <span class="recommendation-text">Suivi continu des performances via l'interface</span>
+                                </div>
+                                <div class="recommendation-item">
+                                    <span class="recommendation-icon">👥</span>
+                                    <span class="recommendation-text">Formation des opérateurs recommandée</span>
+                                </div>
+                                <div class="recommendation-item">
+                                    <span class="recommendation-icon">🔄</span>
+                                    <span class="recommendation-text">Tests d'endurance à poursuivre sur 1000 heures</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 class="footer-title">NATVIT</h4>
+                    <p class="footer-text">Solutions d'automatisation industrielle</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Contact</h4>
+                    <p class="footer-text">13 Route de la Fontaine<br>05110 CLARET</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Projet</h4>
+                    <p class="footer-text">Dépalletisation de bouteilles<br>Automatisation industrielle</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 NATVIT - Tous droits réservés</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navMenu = document.getElementById('navMenu');
+
+        mobileMenuBtn.addEventListener('click', function() {
+            navMenu.classList.toggle('active');
+            mobileMenuBtn.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function() {
+                navMenu.classList.remove('active');
+                mobileMenuBtn.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
