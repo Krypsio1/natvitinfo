@@ -1,0 +1,77 @@
+
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<link href="style.css" rel="stylesheet" />
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body style="background-color: #F8F9F9;">
+
+<header style="box-shadow: 1px 1px 5px black;">
+	<table>
+		<ul>
+			<li><a href="1-cdc/cdc.html" >Cahier des charges</a></li>
+			<li><a href="2-securite/securite.html">Sécurité</a></li>
+			<li><a href="3-po/po.html">P.O</a></li>
+			<li><a href="4-pc/pc.html">P.C</a></li>
+			<li><a href="5-test/test.html" class="current">Test</a></li>
+			<li><a href="6-devis/devis.html">Devis</a></li>
+			<li><a href="7-doctech/doctech.html">Doc technique</a></li>
+		</ul>
+	</table>
+	<div style="background-color: #FBEEE6; height: 100px;width:100%;text-align: center;">
+		<h2 style="margin-top:0px;padding-top:20px;">Dépalletisation de bouteilles</h2>
+		<h3>NATVIT</h3>
+		<img src="logo.png" alt="Natvit" style="position: absolute;top:63px;right:10;width:100px;"/>
+	</div>
+</header>
+<div class="bloc-accueil">
+	<div style="flex: 1 1 auto;width:60vw;margin-top:10vh;">
+		<video id="background-video" autoplay loop muted>
+		  <source src="video1.mp4" type="video/mp4">
+		</video>
+		<div style="position:relative;bottom:5px;top:10px">
+		<button id="btnVideo" onclick="playAndPause()">Pause II</button>
+		</div>
+	</div>
+	<div style="flex: 1 1 auto;">
+		<div class="textindex">
+			<div style="margin-top:15vh;">
+			<h2>NATVIT</h2>
+			<p style="font-size: 18px;">Adresse : 13 Route de la Fontaine 05110 CLARET</p>
+			<p style="font-size: 18px;">Gérant : M.Cabanes</p>
+			<p style="font-size: 18px;">Téléphone : 06 81 33 44 51</p>
+			<p style="font-size: 18px;">Site web: https://www.natvit.fr/</p>
+			</div>
+		</div>
+		<div class="textindex">
+			<div style="margin-top:20vh;">
+			<h3 style="text-transform: uppercase;">Membres du projet</h3>
+			<p style="font-size: 18px;">Lucas Lemaire</p>
+			<p style="font-size: 18px;">Matteo Schon</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div style="margin-top:30px; text-align:center;">
+<h1>Rapport de projet de Mattéo</h1>
+<iframe src="Rapport-schon-matteo.pdf" width="95%" height="800px"> </iframe>
+<h1>Rapport de projet de Lucas</h1>
+<iframe src="Rapport-lucas-lemaire.pdf" width="95%" height="800px"> </iframe>
+</div>
+</body>
+</html>
+<script>
+var video = document.getElementById("background-video");
+var btn = document.getElementById("btnVideo");
+
+function playAndPause () {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause II";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play ▶";
+  }
+} 
+</script>
