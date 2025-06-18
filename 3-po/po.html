@@ -1,43 +1,335 @@
-<html>
+<!DOCTYPE html>
+<html lang="fr">
 <head>
-	<meta charset="utf-8"/>
-	<link href="../style.css" rel="stylesheet" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partie Opérative - NATVIT</title>
+    <link href="../style.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Slab:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<header style="box-shadow: 1px 1px 5px black;">
-	<table>
-		<ul>
-			<li><a href="../index.html" >Accueil</a></li>
-			<li><a href="#" >Cahier des charges</a></li>
-			<li><a href="../2-securite/securite.html">Sécurité</a></li>
-			<li><a href="../3-po/po.html">P.O</a></li>
-			<li><a href="../4-pc/pc.html">P.C</a></li>
-			<li><a href="../5-test/test.html" class="current">Test</a></li>
-			<li><a href="../6-devis/devis.html">Devis</a></li>
-			<li><a href="../7-doctech/doctech.html">Doc technique</a></li>
-		</ul>
-	</table>
-</header>
-<div style="text-align: center;">
-<br><br>
-<h2>Schéma Pneumatique</h2>
-	<div style="display: flex; justify-content:center;">
-		<div>
-			<a href="bras.html"><img src="bras.jpg" style="width:50%;transform: rotate(-90deg);border-radius: 10%;"/></a>
-		</div>
-		<div>
-			<a href="prehenseur.html"><img src="prehenseur.jpg" style="width:50%;transform: rotate(-90deg);border-radius: 10%;"/></a>
-		</div>
-	</div>
-<h2>Grafcet P.o</h2>
-	<div style="display: flex; justify-content:center;">
-		<div>
-			<a href="bras.html"><img src="bras.jpg" style="width:50%;transform: rotate(-90deg);border-radius: 10%;"/></a>
-		</div>
-		<div>
-			<a href="prehenseur.html"><img src="prehenseur.jpg" style="width:50%;transform: rotate(-90deg);border-radius: 10%;"/></a>
-		</div>
-	</div>
-</div>
+    <!-- Navigation Header -->
+    <header class="header-secondary">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="../logo.png" alt="NATVIT Logo" class="logo-img">
+                    <span class="logo-text">NATVIT</span>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+                
+                <!-- Navigation Menu -->
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../1-cdc/cdc.html" class="nav-link">Cahier des charges</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../2-securite/securite.html" class="nav-link">Sécurité</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">P.O</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../4-pc/pc.html" class="nav-link">P.C</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../5-test/test.html" class="nav-link">Test</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../6-devis/devis.html" class="nav-link">Devis</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../7-doctech/doctech.html" class="nav-link">Doc technique</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+        <!-- Page Header -->
+        <section class="page-hero">
+            <div class="container">
+                <div class="breadcrumb">
+                    <a href="../index.html" class="breadcrumb-link">Accueil</a>
+                    <span class="breadcrumb-separator">›</span>
+                    <span class="breadcrumb-current">Partie Opérative</span>
+                </div>
+                <h1 class="page-title">Partie Opérative (P.O)</h1>
+                <p class="page-subtitle">Composants pneumatiques et schémas de fonctionnement</p>
+            </div>
+        </section>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Schéma Pneumatique Section -->
+        <section class="section">
+            <div class="container">
+                <div class="content-section">
+                    <div class="section-header">
+                        <h2 class="section-title">Schéma Pneumatique</h2>
+                        <p class="section-description">
+                            Diagrammes des circuits pneumatiques du système de dépalletisation
+                        </p>
+                    </div>
+                    
+                    <div class="schema-grid">
+                        <div class="schema-card">
+                            <div class="schema-header">
+                                <h3 class="schema-title">Système de Bras</h3>
+                                <div class="schema-badge">Pneumatique</div>
+                            </div>
+                            <div class="schema-content">
+                                <a href="bras.html" class="schema-link">
+                                    <div class="schema-image-container">
+                                        <img src="bras.jpg" alt="Schéma du bras pneumatique" class="schema-image">
+                                        <div class="schema-overlay">
+                                            <div class="overlay-content">
+                                                <span class="overlay-icon">🔍</span>
+                                                <span class="overlay-text">Voir le détail</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="schema-footer">
+                                <p class="schema-description">Circuit pneumatique pour le mouvement du bras manipulateur</p>
+                            </div>
+                        </div>
+                        
+                        <div class="schema-card">
+                            <div class="schema-header">
+                                <h3 class="schema-title">Système Préhenseur</h3>
+                                <div class="schema-badge">Pneumatique</div>
+                            </div>
+                            <div class="schema-content">
+                                <a href="prehenseur.html" class="schema-link">
+                                    <div class="schema-image-container">
+                                        <img src="prehenseur.jpg" alt="Schéma du préhenseur pneumatique" class="schema-image">
+                                        <div class="schema-overlay">
+                                            <div class="overlay-content">
+                                                <span class="overlay-icon">🔍</span>
+                                                <span class="overlay-text">Voir le détail</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="schema-footer">
+                                <p class="schema-description">Système de préhension et manipulation des bouteilles</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GRAFCET Section -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="content-section">
+                    <div class="section-header">
+                        <h2 class="section-title">GRAFCET Partie Opérative</h2>
+                        <p class="section-description">
+                            Graphes de coordination des tâches et séquences d'opération
+                        </p>
+                    </div>
+                    
+                    <div class="grafcet-grid">
+                        <div class="grafcet-card">
+                            <div class="grafcet-header">
+                                <h3 class="grafcet-title">GRAFCET Bras</h3>
+                                <div class="grafcet-badge">Séquentiel</div>
+                            </div>
+                            <div class="grafcet-content">
+                                <a href="bras.html" class="grafcet-link">
+                                    <div class="grafcet-image-container">
+                                        <img src="bras.jpg" alt="GRAFCET du bras" class="grafcet-image">
+                                        <div class="grafcet-overlay">
+                                            <div class="overlay-content">
+                                                <span class="overlay-icon">📊</span>
+                                                <span class="overlay-text">Analyser</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grafcet-info">
+                                <div class="info-row">
+                                    <span class="info-label">Étapes :</span>
+                                    <span class="info-value">7 étapes</span>
+                                </div>
+                                <div class="info-row">
+                                    <span class="info-label">Transitions :</span>
+                                    <span class="info-value">6 conditions</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="grafcet-card">
+                            <div class="grafcet-header">
+                                <h3 class="grafcet-title">GRAFCET Préhenseur</h3>
+                                <div class="grafcet-badge">Séquentiel</div>
+                            </div>
+                            <div class="grafcet-content">
+                                <a href="prehenseur.html" class="grafcet-link">
+                                    <div class="grafcet-image-container">
+                                        <img src="prehenseur.jpg" alt="GRAFCET du préhenseur" class="grafcet-image">
+                                        <div class="grafcet-overlay">
+                                            <div class="overlay-content">
+                                                <span class="overlay-icon">📊</span>
+                                                <span class="overlay-text">Analyser</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grafcet-info">
+                                <div class="info-row">
+                                    <span class="info-label">Étapes :</span>
+                                    <span class="info-value">5 étapes</span>
+                                </div>
+                                <div class="info-row">
+                                    <span class="info-label">Transitions :</span>
+                                    <span class="info-value">4 conditions</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Components Section -->
+        <section class="section">
+            <div class="container">
+                <div class="content-section">
+                    <div class="section-header">
+                        <h2 class="section-title">Composants Principaux</h2>
+                        <p class="section-description">
+                            Éléments constitutifs du système pneumatique
+                        </p>
+                    </div>
+                    
+                    <div class="components-grid">
+                        <div class="component-card">
+                            <div class="component-icon">⚙️</div>
+                            <h3 class="component-title">Vérin Pneumatique</h3>
+                            <p class="component-description">Actionneur linéaire pour les mouvements de translation</p>
+                            <div class="component-specs">
+                                <div class="spec-item">
+                                    <span class="spec-label">Pression :</span>
+                                    <span class="spec-value">6 bar</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Course :</span>
+                                    <span class="spec-value">200 mm</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="component-card">
+                            <div class="component-icon">🔄</div>
+                            <h3 class="component-title">Vérin Rotatif</h3>
+                            <p class="component-description">Actionneur angulaire pour les mouvements de rotation</p>
+                            <div class="component-specs">
+                                <div class="spec-item">
+                                    <span class="spec-label">Angle :</span>
+                                    <span class="spec-value">90°</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Couple :</span>
+                                    <span class="spec-value">15 Nm</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="component-card">
+                            <div class="component-icon">🎛️</div>
+                            <h3 class="component-title">Distributeur 5/2</h3>
+                            <p class="component-description">Valve de distribution pneumatique à 5 orifices et 2 positions</p>
+                            <div class="component-specs">
+                                <div class="spec-item">
+                                    <span class="spec-label">Type :</span>
+                                    <span class="spec-value">Électropneumatique</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Débit :</span>
+                                    <span class="spec-value">800 l/min</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="component-card">
+                            <div class="component-icon">🤏</div>
+                            <h3 class="component-title">Pince Pneumatique</h3>
+                            <p class="component-description">Système de préhension pour saisir les bouteilles</p>
+                            <div class="component-specs">
+                                <div class="spec-item">
+                                    <span class="spec-label">Force :</span>
+                                    <span class="spec-value">120 N</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Ouverture :</span>
+                                    <span class="spec-value">80 mm</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 class="footer-title">NATVIT</h4>
+                    <p class="footer-text">Solutions d'automatisation industrielle</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Contact</h4>
+                    <p class="footer-text">13 Route de la Fontaine<br>05110 CLARET</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Projet</h4>
+                    <p class="footer-text">Dépalletisation de bouteilles<br>Automatisation industrielle</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 NATVIT - Tous droits réservés</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navMenu = document.getElementById('navMenu');
+
+        mobileMenuBtn.addEventListener('click', function() {
+            navMenu.classList.toggle('active');
+            mobileMenuBtn.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function() {
+                navMenu.classList.remove('active');
+                mobileMenuBtn.classList.remove('active');
+            });
+        });
+    </script>
 </body>
 </html>

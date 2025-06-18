@@ -1,29 +1,343 @@
-<html>
+<!DOCTYPE html>
+<html lang="fr">
 <head>
-	<meta charset="utf-8"/>
-	<link href="../style.css" rel="stylesheet" />
-	<link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation Technique - NATVIT</title>
+    <link href="../style.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Slab:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<header style="box-shadow: 1px 1px 5px black;">
-	<table>
-		<ul>
-			<li><a href="../index.html" >Accueil</a></li>
-			<li><a href="../1-cdc/cdc.html" >Cahier des charges</a></li>
-			<li><a href="../2-securite/securite.html">Sécurité</a></li>
-			<li><a href="../3-po/po.html">P.O</a></li>
-			<li><a href="../4-pc/pc.html">P.C</a></li>
-			<li><a href="../5-test/test.html" class="current">Test</a></li>
-			<li><a href="../6-devis/devis.html">Devis</a></li>
-			<li><a href="#">Doc technique</a></li>
-		</ul>
-	</table>
-</header>
-<div style="text-align: center;">
-<h3>Manuel d'instruction Manipulateur DALMEC</h3>
-<embed src="m-instruction.pdf" width="50%" height="700" type="application/pdf"/>
-<h3>Jus Natura</h3>
-<embed src="bouteille.pdf" width="50%" height="700" type="application/pdf"/>
-</div>
+    <!-- Navigation Header -->
+    <header class="header-secondary">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="../logo.png" alt="NATVIT Logo" class="logo-img">
+                    <span class="logo-text">NATVIT</span>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+                
+                <!-- Navigation Menu -->
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../1-cdc/cdc.html" class="nav-link">Cahier des charges</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../2-securite/securite.html" class="nav-link">Sécurité</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../3-po/po.html" class="nav-link">P.O</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../4-pc/pc.html" class="nav-link">P.C</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../5-test/test.html" class="nav-link">Test</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../6-devis/devis.html" class="nav-link">Devis</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Doc technique</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+        <!-- Page Header -->
+        <section class="page-hero">
+            <div class="container">
+                <div class="breadcrumb">
+                    <a href="../index.html" class="breadcrumb-link">Accueil</a>
+                    <span class="breadcrumb-separator">›</span>
+                    <span class="breadcrumb-current">Documentation Technique</span>
+                </div>
+                <h1 class="page-title">Documentation Technique</h1>
+                <p class="page-subtitle">Manuels d'utilisation et spécifications techniques des équipements</p>
+            </div>
+        </section>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">        
+        <!-- Technical Documents Section -->
+        <section class="section">
+            <div class="container">
+                <div class="content-section">
+                    <div class="section-header">
+                        <h2 class="section-title">Documents Techniques</h2>
+                        <p class="section-description">
+                            Consultez les manuels et spécifications des équipements utilisés dans le projet
+                        </p>
+                    </div>
+                    
+                    <div class="docs-grid">
+                        <!-- Manuel d'instruction DALMEC -->
+                        <div class="doc-card">
+                            <div class="doc-header">
+                                <div class="doc-icon">📖</div>
+                                <div class="doc-info">
+                                    <h3 class="doc-title">Manuel d'instruction Manipulateur DALMEC</h3>
+                                    <div class="doc-meta">
+                                        <span class="doc-type">Manuel d'utilisation</span>
+                                        <span class="doc-format">PDF</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="doc-description">
+                                <p>Guide complet d'utilisation et de maintenance du manipulateur pneumatique DALMEC utilisé pour la dépalletisation.</p>
+                                <div class="doc-features">
+                                    <span class="feature-tag">Installation</span>
+                                    <span class="feature-tag">Maintenance</span>
+                                    <span class="feature-tag">Sécurité</span>
+                                </div>
+                            </div>
+                            <div class="doc-content">
+                                <div class="doc-preview">
+                                    <embed src="m-instruction.pdf" class="doc-embed" type="application/pdf" title="Manuel d'instruction DALMEC"/>
+                                </div>
+                            </div>
+                            <div class="doc-actions">
+                                <a href="m-instruction.pdf" target="_blank" class="doc-button primary">
+                                    <span class="button-icon">📥</span>
+                                    Télécharger
+                                </a>
+                                <button class="doc-button secondary" onclick="toggleFullscreen('manual1')">
+                                    <span class="button-icon">🔍</span>
+                                    Plein écran
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Documentation Jus Natura -->
+                        <div class="doc-card">
+                            <div class="doc-header">
+                                <div class="doc-icon">🍊</div>
+                                <div class="doc-info">
+                                    <h3 class="doc-title">Spécifications Bouteilles Jus Natura</h3>
+                                    <div class="doc-meta">
+                                        <span class="doc-type">Spécifications produit</span>
+                                        <span class="doc-format">PDF</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="doc-description">
+                                <p>Caractéristiques techniques des bouteilles de jus Natura : dimensions, poids, matériaux et contraintes de manipulation.</p>
+                                <div class="doc-features">
+                                    <span class="feature-tag">Dimensions</span>
+                                    <span class="feature-tag">Matériaux</span>
+                                    <span class="feature-tag">Contraintes</span>
+                                </div>
+                            </div>
+                            <div class="doc-content">
+                                <div class="doc-preview">
+                                    <embed src="bouteille.pdf" class="doc-embed" type="application/pdf" title="Spécifications bouteilles Jus Natura"/>
+                                </div>
+                            </div>
+                            <div class="doc-actions">
+                                <a href="bouteille.pdf" target="_blank" class="doc-button primary">
+                                    <span class="button-icon">📥</span>
+                                    Télécharger
+                                </a>
+                                <button class="doc-button secondary" onclick="toggleFullscreen('manual2')">
+                                    <span class="button-icon">🔍</span>
+                                    Plein écran
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Documentation PALO -->
+                        <div class="doc-card">
+                            <div class="doc-header">
+                                <div class="doc-icon">⚙️</div>
+                                <div class="doc-info">
+                                    <h3 class="doc-title">Documentation PALO 2018</h3>
+                                    <div class="doc-meta">
+                                        <span class="doc-type">Documentation technique</span>
+                                        <span class="doc-format">PDF</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="doc-description">
+                                <p>Documentation complète du système PALO 2018 utilisé dans le processus d'automatisation de la dépalletisation.</p>
+                                <div class="doc-features">
+                                    <span class="feature-tag">Configuration</span>
+                                    <span class="feature-tag">Programmation</span>
+                                    <span class="feature-tag">Interface</span>
+                                </div>
+                            </div>
+                            <div class="doc-content">
+                                <div class="doc-preview">
+                                    <embed src="NEW-DOC2018-PALO-FR.pdf" class="doc-embed" type="application/pdf" title="Documentation PALO 2018"/>
+                                </div>
+                            </div>
+                            <div class="doc-actions">
+                                <a href="NEW-DOC2018-PALO-FR.pdf" target="_blank" class="doc-button primary">
+                                    <span class="button-icon">📥</span>
+                                    Télécharger
+                                </a>
+                                <button class="doc-button secondary" onclick="toggleFullscreen('manual3')">
+                                    <span class="button-icon">🔍</span>
+                                    Plein écran
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Reference Section -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="content-section">
+                    <div class="section-header">
+                        <h2 class="section-title">Références Rapides</h2>
+                        <p class="section-description">
+                            Informations techniques essentielles pour le projet
+                        </p>
+                    </div>
+                    
+                    <div class="reference-grid">
+                        <div class="reference-card">
+                            <div class="reference-header">
+                                <h3 class="reference-title">Spécifications Techniques</h3>
+                                <div class="reference-icon">📊</div>
+                            </div>
+                            <div class="reference-content">
+                                <div class="spec-list">
+                                    <div class="spec-row">
+                                        <span class="spec-label">Pression de travail :</span>
+                                        <span class="spec-value">6 bar</span>
+                                    </div>
+                                    <div class="spec-row">
+                                        <span class="spec-label">Débit d'air :</span>
+                                        <span class="spec-value">800 l/min</span>
+                                    </div>
+                                    <div class="spec-row">
+                                        <span class="spec-label">Charge max :</span>
+                                        <span class="spec-value">15 kg</span>
+                                    </div>
+                                    <div class="spec-row">
+                                        <span class="spec-label">Cycle de travail :</span>
+                                        <span class="spec-value">120 cycles/h</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="reference-card">
+                            <div class="reference-header">
+                                <h3 class="reference-title">Dimensions Bouteilles</h3>
+                                <div class="reference-icon">📏</div>
+                            </div>
+                            <div class="reference-content">
+                                <div class="spec-list">
+                                    <div class="spec-row">
+                                        <span class="spec-label">Hauteur :</span>
+                                        <span class="spec-value">240 mm</span>
+                                    </div>
+                                    <div class="spec-row">
+                                        <span class="spec-label">Diamètre :</span>
+                                        <span class="spec-value">85 mm</span>
+                                    </div>
+                                    <div class="spec-row">
+                                        <span class="spec-label">Poids vide :</span>
+                                        <span class="spec-value">45 g</span>
+                                    </div>
+                                    <div class="spec-row">
+                                        <span class="spec-label">Poids plein :</span>
+                                        <span class="spec-value">545 g</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="reference-card">
+                            <div class="reference-header">
+                                <h3 class="reference-title">Contacts Techniques</h3>
+                                <div class="reference-icon">📞</div>
+                            </div>
+                            <div class="reference-content">
+                                <div class="contact-list">
+                                    <div class="contact-item">
+                                        <span class="contact-label">Support DALMEC :</span>
+                                        <span class="contact-value">+33 1 23 45 67 89</span>
+                                    </div>
+                                    <div class="contact-item">
+                                        <span class="contact-label">SAV PALO :</span>
+                                        <span class="contact-value">sav@palo.fr</span>
+                                    </div>
+                                    <div class="contact-item">
+                                        <span class="contact-label">Maintenance :</span>
+                                        <span class="contact-value">maintenance@natvit.fr</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 class="footer-title">NATVIT</h4>
+                    <p class="footer-text">Solutions d'automatisation industrielle</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Contact</h4>
+                    <p class="footer-text">13 Route de la Fontaine<br>05110 CLARET</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Projet</h4>
+                    <p class="footer-text">Dépalletisation de bouteilles<br>Automatisation industrielle</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 NATVIT - Tous droits réservés</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navMenu = document.getElementById('navMenu');
+
+        mobileMenuBtn.addEventListener('click', function() {
+            navMenu.classList.toggle('active');
+            mobileMenuBtn.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function() {
+                navMenu.classList.remove('active');
+                mobileMenuBtn.classList.remove('active');
+            });
+        });
+
+        // Fullscreen toggle function for documents
+        function toggleFullscreen(docId) {
+            // This would typically integrate with a modal or fullscreen API
+            alert('Fonctionnalité plein écran - À implémenter selon les besoins spécifiques');
+        }
+    </script>
 </body>
 </html>
