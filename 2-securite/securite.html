@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sécurité - NATVIT</title>
+    <link href="../style.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Slab:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="header-secondary">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="../logo.png" alt="NATVIT Logo" class="logo-img">
+                    <span class="logo-text">NATVIT</span>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+                
+                <!-- Navigation Menu -->
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../1-cdc/cdc.html" class="nav-link">Cahier des charges</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Sécurité</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../3-po/po.html" class="nav-link">P.O</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../4-pc/pc.html" class="nav-link">P.C</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../5-test/test.html" class="nav-link">Test</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../6-devis/devis.html" class="nav-link">Devis</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../7-doctech/doctech.html" class="nav-link">Doc technique</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+        <!-- Page Header -->
+        <section class="page-hero">
+            <div class="container">
+                <div class="breadcrumb">
+                    <a href="../index.html" class="breadcrumb-link">Accueil</a>
+                    <span class="breadcrumb-separator">›</span>
+                    <span class="breadcrumb-current">Sécurité</span>
+                </div>
+                <h1 class="page-title">Analyse de Sécurité</h1>
+                <p class="page-subtitle">Évaluation des risques et mesures de sécurité pour l'automatisation</p>
+            </div>
+        </section>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Safety Overview Section -->
+        <section class="section">
+            <div class="container">
+                <div class="content-section">
+                    <div class="section-header">
+                        <h2 class="section-title">Vue d'ensemble Sécurité</h2>
+                        <p class="section-description">
+                            La sécurité est prioritaire dans notre système de dépalletisation automatisé
+                        </p>
+                    </div>
+                    
+                    <div class="safety-grid">
+                        <div class="safety-card priority-high">
+                            <div class="safety-header">
+                                <div class="safety-icon">🛡️</div>
+                                <div class="safety-level">Niveau 1</div>
+                            </div>
+                            <h3 class="safety-title">Sécurité des Opérateurs</h3>
+                            <p class="safety-description">Protection du personnel contre les risques mécaniques et pneumatiques</p>
+                            <div class="safety-measures">
+                                <div class="measure-item">
+                                    <span class="measure-icon">✓</span>
+                                    <span class="measure-text">Barrières de sécurité périmétrique</span>
+                                </div>
+                                <div class="measure-item">
+                                    <span class="measure-icon">✓</span>
+                                    <span class="measure-text">Arrêts d'urgence accessibles</span>
+                                </div>
+                                <div class="measure-item">
+                                    <span class="measure-icon">✓</span>
+                                    <span class="measure-text">Capteurs de présence</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="safety-card priority-medium">
+                            <div class="safety-header">
+                                <div class="safety-icon">⚡</div>
+                                <div class="safety-level">Niveau 2</div>
+                            </div>
+                            <h3 class="safety-title">Sécurité Électrique</h3>
+                            <p class="safety-description">Protection contre les risques électriques et électromagnétiques</p>
+                            <div class="safety-measures">
+                                <div class="measure-item">
+                                    <span class="measure-icon">✓</span>
+                                    <span class="measure-text">Mise à la terre des équipements</span>
+                                </div>
+                                <div class="measure-item">
+                                    <span class="measure-icon">✓</span>
+                                    <span class="measure-text">Protection différentielle 30 mA</span>
+                                </div>
+                                <div class="measure-item">
+                                    <span class="measure-icon">✓</span>
+                                    <span class="measure-text">Isolation galvanique</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="safety-card priority-medium">
+                            <div class="safety-header">
+                                <div class="safety-icon">💨</div>
+                                <div class="safety-level">Niveau 2</div>
+                            </div>
+                            <h3 class="safety-title">Sécurité Pneumatique</h3>
+                            <p class="safety-description">Contrôle de la pression et prévention des fuites pneumatiques</p>
+                            <div class="safety-measures">
+                                <div class="measure-item">
+                                    <span class="measure-icon">✓</span>
+                                    <span class="measure-text">Limiteurs de pression</span>
+                                </div>
+                                <div class="measure-item">
+                                    <span class="measure-icon">✓</span>
+                                    <span class="measure-text">Soupapes de sécurité</span>
+                                </div>
+                                <div class="measure-item">
+                                    <span class="measure-icon">✓</span>
+                                    <span class="measure-text">Vérins avec amortisseurs</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="safety-card priority-low">
+                            <div class="safety-header">
+                                <div class="safety-icon">🏭</div>
+                                <div class="safety-level">Niveau 3</div>
+                            </div>
+                            <h3 class="safety-title">Sécurité Environnementale</h3>
+                            <p class="safety-description">Protection de l'environnement de travail et conformité réglementaire</p>
+                            <div class="safety-measures">
+                                <div class="measure-item">
+                                    <span class="measure-icon">✓</span>
+                                    <span class="measure-text">Niveaux sonores conformes</span>
+                                </div>
+                                <div class="measure-item">
+                                    <span class="measure-icon">✓</span>
+                                    <span class="measure-text">Éclairage de sécurité</span>
+                                </div>
+                                <div class="measure-item">
+                                    <span class="measure-icon">✓</span>
+                                    <span class="measure-text">Ventilation adaptée</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Risk Analysis Section -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="content-section">
+                    <div class="section-header">
+                        <h2 class="section-title">Analyse des Risques</h2>
+                        <p class="section-description">
+                            Identification et évaluation des risques potentiels du système
+                        </p>
+                    </div>
+                    
+                    <div class="risk-analysis-table">
+                        <div class="table-container">
+                            <table class="risk-table">
+                                <thead>
+                                    <tr>
+                                        <th>Risque Identifié</th>
+                                        <th>Probabilité</th>
+                                        <th>Gravité</th>
+                                        <th>Niveau</th>
+                                        <th>Mesures de Prévention</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="risk-high">
+                                        <td>
+                                            <div class="risk-item">
+                                                <span class="risk-icon">⚠️</span>
+                                                <span>Écrasement par bras manipulateur</span>
+                                            </div>
+                                        </td>
+                                        <td><span class="probability medium">Moyenne</span></td>
+                                        <td><span class="severity high">Élevée</span></td>
+                                        <td><span class="risk-level high">ÉLEVÉ</span></td>
+                                        <td>Barrières physiques, capteurs de position</td>
+                                    </tr>
+                                    <tr class="risk-medium">
+                                        <td>
+                                            <div class="risk-item">
+                                                <span class="risk-icon">⚡</span>
+                                                <span>Électrocution</span>
+                                            </div>
+                                        </td>
+                                        <td><span class="probability low">Faible</span></td>
+                                        <td><span class="severity high">Élevée</span></td>
+                                        <td><span class="risk-level medium">MOYEN</span></td>
+                                        <td>Protection différentielle, consignation</td>
+                                    </tr>
+                                    <tr class="risk-medium">
+                                        <td>
+                                            <div class="risk-item">
+                                                <span class="risk-icon">💨</span>
+                                                <span>Surpression pneumatique</span>
+                                            </div>
+                                        </td>
+                                        <td><span class="probability low">Faible</span></td>
+                                        <td><span class="severity medium">Moyenne</span></td>
+                                        <td><span class="risk-level medium">MOYEN</span></td>
+                                        <td>Soupapes de sécurité, manomètres</td>
+                                    </tr>
+                                    <tr class="risk-low">
+                                        <td>
+                                            <div class="risk-item">
+                                                <span class="risk-icon">🔊</span>
+                                                <span>Exposition au bruit</span>
+                                            </div>
+                                        </td>
+                                        <td><span class="probability high">Élevée</span></td>
+                                        <td><span class="severity low">Faible</span></td>
+                                        <td><span class="risk-level low">FAIBLE</span></td>
+                                        <td>Insonorisation, EPI auditifs</td>
+                                    </tr>
+                                    <tr class="risk-low">
+                                        <td>
+                                            <div class="risk-item">
+                                                <span class="risk-icon">🏃</span>
+                                                <span>Glissade/Chute</span>
+                                            </div>
+                                        </td>
+                                        <td><span class="probability medium">Moyenne</span></td>
+                                        <td><span class="severity low">Faible</span></td>
+                                        <td><span class="risk-level low">FAIBLE</span></td>
+                                        <td>Sol antidérapant, éclairage adapté</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Safety Equipment Section -->
+        <section class="section">
+            <div class="container">
+                <div class="content-section">
+                    <div class="section-header">
+                        <h2 class="section-title">Équipements de Sécurité</h2>
+                        <p class="section-description">
+                            Dispositifs et équipements de protection installés sur le système
+                        </p>
+                    </div>
+                    
+                    <div class="equipment-grid">
+                        <div class="equipment-card">
+                            <div class="equipment-image">
+                                <div class="equipment-placeholder">
+                                    <span class="placeholder-icon">🚨</span>
+                                </div>
+                            </div>
+                            <div class="equipment-content">
+                                <h3 class="equipment-title">Arrêt d'Urgence</h3>
+                                <p class="equipment-description">Boutons d'arrêt d'urgence disposés stratégiquement autour de la zone de travail</p>
+                                <div class="equipment-specs">
+                                    <div class="spec-item">
+                                        <span class="spec-label">Type :</span>
+                                        <span class="spec-value">Coup de poing</span>
+                                    </div>
+                                    <div class="spec-item">
+                                        <span class="spec-label">Norme :</span>
+                                        <span class="spec-value">ISO 13850</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="equipment-card">
+                            <div class="equipment-image">
+                                <div class="equipment-placeholder">
+                                    <span class="placeholder-icon">🛡️</span>
+                                </div>
+                            </div>
+                            <div class="equipment-content">
+                                <h3 class="equipment-title">Barrières de Sécurité</h3>
+                                <p class="equipment-description">Clôtures périmètriques avec portillons à verrouillage de sécurité</p>
+                                <div class="equipment-specs">
+                                    <div class="spec-item">
+                                        <span class="spec-label">Hauteur :</span>
+                                        <span class="spec-value">1,8 m</span>
+                                    </div>
+                                    <div class="spec-item">
+                                        <span class="spec-label">Type :</span>
+                                        <span class="spec-value">Grillage rigide</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="equipment-card">
+                            <div class="equipment-image">
+                                <div class="equipment-placeholder">
+                                    <span class="placeholder-icon">👁️</span>
+                                </div>
+                            </div>
+                            <div class="equipment-content">
+                                <h3 class="equipment-title">Capteurs de Sécurité</h3>
+                                <p class="equipment-description">Rideaux lumineux et capteurs de proximité pour détecter les intrusions</p>
+                                <div class="equipment-specs">
+                                    <div class="spec-item">
+                                        <span class="spec-label">Portée :</span>
+                                        <span class="spec-value">6 m</span>
+                                    </div>
+                                    <div class="spec-item">
+                                        <span class="spec-label">Résolution :</span>
+                                        <span class="spec-value">30 mm</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="equipment-card">
+                            <div class="equipment-image">
+                                <div class="equipment-placeholder">
+                                    <span class="placeholder-icon">⚡</span>
+                                </div>
+                            </div>
+                            <div class="equipment-content">
+                                <h3 class="equipment-title">Protection Électrique</h3>
+                                <p class="equipment-description">Disjoncteurs différentiels et dispositifs de coupure d'urgence</p>
+                                <div class="equipment-specs">
+                                    <div class="spec-item">
+                                        <span class="spec-label">Sensibilité :</span>
+                                        <span class="spec-value">30 mA</span>
+                                    </div>
+                                    <div class="spec-item">
+                                        <span class="spec-label">Calibre :</span>
+                                        <span class="spec-value">25 A</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Compliance Section -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="content-section">
+                    <div class="section-header">
+                        <h2 class="section-title">Conformité Réglementaire</h2>
+                        <p class="section-description">
+                            Respect des normes et réglementations de sécurité en vigueur
+                        </p>
+                    </div>
+                    
+                    <div class="compliance-grid">
+                        <div class="compliance-card">
+                            <div class="compliance-badge">
+                                <span class="badge-text">EN ISO 12100</span>
+                            </div>
+                            <h3 class="compliance-title">Sécurité des Machines</h3>
+                            <p class="compliance-description">Principes généraux de conception - Évaluation du risque et réduction du risque</p>
+                        </div>
+                        
+                        <div class="compliance-card">
+                            <div class="compliance-badge">
+                                <span class="badge-text">EN ISO 13849</span>
+                            </div>
+                            <h3 class="compliance-title">Parties de Systèmes de Commande</h3>
+                            <p class="compliance-description">Aspects liés à la sécurité - Principes généraux de conception</p>
+                        </div>
+                        
+                        <div class="compliance-card">
+                            <div class="compliance-badge">
+                                <span class="badge-text">Directive Machines</span>
+                            </div>
+                            <h3 class="compliance-title">2006/42/CE</h3>
+                            <p class="compliance-description">Directive européenne relative aux machines et équipements industriels</p>
+                        </div>
+                        
+                        <div class="compliance-card">
+                            <div class="compliance-badge">
+                                <span class="badge-text">Code du Travail</span>
+                            </div>
+                            <h3 class="compliance-title">Articles R4311-1 à R4311-14</h3>
+                            <p class="compliance-description">Règles techniques relatives aux équipements de travail</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 class="footer-title">NATVIT</h4>
+                    <p class="footer-text">Solutions d'automatisation industrielle</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Contact</h4>
+                    <p class="footer-text">13 Route de la Fontaine<br>05110 CLARET</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Projet</h4>
+                    <p class="footer-text">Dépalletisation de bouteilles<br>Automatisation industrielle</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 NATVIT - Tous droits réservés</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navMenu = document.getElementById('navMenu');
+
+        mobileMenuBtn.addEventListener('click', function() {
+            navMenu.classList.toggle('active');
+            mobileMenuBtn.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function() {
+                navMenu.classList.remove('active');
+                mobileMenuBtn.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
